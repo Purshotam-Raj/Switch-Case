@@ -1,0 +1,22 @@
+<h4>Ng For Loops Implementation</h4>
+<table border="2px solid black" style="text-align: center; border-collapse:collapse; padding: 100px; ">
+    <tr>
+        <th> Index  </th>
+        <th> User Id </th>
+        <th> User Name </th>
+        <th> First </th>
+        <th> Last </th>
+        <th> Even </th>
+        <th> Odd </th>
+    </tr>
+    <tr *ngFor="let user of users; index as i; first as f; last as l; even as e; odd as o;">
+        <td> {{ i }} </td>
+        <td> {{ user.userId }} </td>
+        <td> {{ user.userName }} </td>
+        <td> {{ f }} </td>
+        <td> {{ l }} </td>
+        <td> {{ e }} </td>
+        <td> {{ o }} </td>
+    </tr>
+</table>
+
